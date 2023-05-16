@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: poppins, sans-serif;
+    box-sizing:  border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #00aaff, #00ff6c);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container input:hover {
+    background-color: lightgray;
+}
+.calculator{
+    background: lightgray;
+    padding: 20px;
+    border-radius: 50px;
+    height: 180pxpx;
+}
+.calculator form input{
+    border: 0;
+    outline: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+    background: transparent;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+    margin: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+form .display input{
+    grid-column: span 4;
+    text-align: end;
+    height: 80px;
+    width: 258px;
+    border-radius: 35px;
+    border: none;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.2);
+    color: black;
+    margin: 40px 0px 40px 0px;
+    padding: 20px;
+    font-size: 40px;
+    
+}
+form input.equal{
+    width: 130px;
+    border-radius: 42px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),
+     5px 5px 15px rgba(0, 0, 0, 0.2);
+     background-color: transparent;
+}
+form input.operator{
+    color: black;
+    text-align: center;
+
+}
+.calculator .previous-operand {
+    color: gray;
+    font-size: 8px;
+
+}
+.calculator .current-operand {
+    color: lightgray;
+    font-size: 10px;
+}
